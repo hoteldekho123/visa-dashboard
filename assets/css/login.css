@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap');
+
+:root {
+    /* --theme1:#6259ca; */
+    --theme1:#183d4c;
+    --theme-hover:#0f2e38;
+}
+
+body {
+    font-family: "Nunito Sans", serif;
+    font-size: 14px;
+    color: #212B36;
+    line-height: 1.5;
+    /* background-color: #FAFBFE; */
+    background-color: rgb(234,237,247);
+}
+
+.login-page {
+    height: 100vh;
+}
+.login-card {
+    border-radius: 8px;
+}
+.login-card .login-left {
+    background-color: var(--theme1);
+}
+.login-card .login-left-heading {
+    font-size: 18px;
+    font-weight: 700;
+    color: #ffff;
+}
+.login-card .login-left-title {
+    font-size: 13px;
+    color: rgba(255,255,255)!important;
+    margin-top: 8px;
+}
+.login-card .login-logo {
+    height: 60px;
+}
+.login-card .login-form {
+    padding:40px 20px;
+}
+.login-card .login-right-heading {
+    font-size: 18px;
+}
+.login-card .form-label {
+    font-weight:600;
+    color: #000;
+}
+.login-card .form-control {
+    font-size: 14px;
+    height: 40px;
+}
+.login-card .login-btn {
+    background: var(--theme1);
+    padding: 9.5px 15px;
+    color: #fff;
+    font-weight: 600;
+    font-size: 15px;
+    border-radius: 5px;
+    transition: all 0.3s ease-in-out;
+}
+.login-card .login-btn:hover {
+    background-color: var(--theme-hover);
+}
+.login-card .login-right-logo {
+    height: 55px;
+    margin-bottom: 20px;
+    margin-left: -10px;
+}
+@media (max-width:991px){
+    .login-card .row {
+        margin: auto;
+    }
+}
+@media (max-width:991px){
+    .login-page {
+        height: auto;
+        padding-block: 30px;
+    }
+    .login-card .login-form {
+        padding:20px 15px 25px 15px;
+    }
+}
